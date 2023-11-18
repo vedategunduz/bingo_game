@@ -1,0 +1,43 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+#wrapper {
+    width: 100%;
+    padding: 1rem 10vw;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+}
+
+.bingo-card {
+    border-radius: .25rem;
+}
+
+.bingo-card header {
+    text-align: center;
+    padding: .5rem 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+}
+
+footer {
+    display: grid;
+    gap: 1px;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    padding: .25rem;
+}
+
+footer .bingo-card-item {
+    padding: .75rem 0;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+}
